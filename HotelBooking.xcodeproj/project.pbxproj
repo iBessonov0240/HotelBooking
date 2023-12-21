@@ -13,6 +13,7 @@
 		FA575B882B341FF900A1BEA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA575B862B341FF900A1BEA4 /* Main.storyboard */; };
 		FA575B8A2B34200000A1BEA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA575B892B34200000A1BEA4 /* Assets.xcassets */; };
 		FA575B8D2B34200000A1BEA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA575B8B2B34200000A1BEA4 /* LaunchScreen.storyboard */; };
+		FA575B962B34222300A1BEA4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575B952B34222300A1BEA4 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FA575B892B34200000A1BEA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA575B8C2B34200000A1BEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA575B8E2B34200000A1BEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA575B952B34222300A1BEA4 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		FA575B7F2B341FF900A1BEA4 /* HotelBooking */ = {
 			isa = PBXGroup;
 			children = (
-				FA575B802B341FF900A1BEA4 /* AppDelegate.swift */,
-				FA575B822B341FF900A1BEA4 /* SceneDelegate.swift */,
-				FA575B842B341FF900A1BEA4 /* ViewController.swift */,
-				FA575B862B341FF900A1BEA4 /* Main.storyboard */,
-				FA575B892B34200000A1BEA4 /* Assets.xcassets */,
-				FA575B8B2B34200000A1BEA4 /* LaunchScreen.storyboard */,
-				FA575B8E2B34200000A1BEA4 /* Info.plist */,
+				FA575B942B3421F200A1BEA4 /* Extensions */,
+				FA575B972B34228600A1BEA4 /* Resources */,
+				FA575B982B3422BD00A1BEA4 /* App */,
+				FA575B992B3422D600A1BEA4 /* Sources */,
 			);
 			path = HotelBooking;
+			sourceTree = "<group>";
+		};
+		FA575B942B3421F200A1BEA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA575B952B34222300A1BEA4 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA575B972B34228600A1BEA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA575B892B34200000A1BEA4 /* Assets.xcassets */,
+				FA575B8E2B34200000A1BEA4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA575B982B3422BD00A1BEA4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA575B802B341FF900A1BEA4 /* AppDelegate.swift */,
+				FA575B822B341FF900A1BEA4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA575B992B3422D600A1BEA4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FA575B862B341FF900A1BEA4 /* Main.storyboard */,
+				FA575B8B2B34200000A1BEA4 /* LaunchScreen.storyboard */,
+				FA575B842B341FF900A1BEA4 /* ViewController.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			files = (
 				FA575B852B341FF900A1BEA4 /* ViewController.swift in Sources */,
 				FA575B812B341FF900A1BEA4 /* AppDelegate.swift in Sources */,
+				FA575B962B34222300A1BEA4 /* UIView+Extensions.swift in Sources */,
 				FA575B832B341FF900A1BEA4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9S7JT7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HotelBooking/Info.plist;
+				INFOPLIST_FILE = HotelBooking/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9S7JT7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HotelBooking/Info.plist;
+				INFOPLIST_FILE = HotelBooking/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
